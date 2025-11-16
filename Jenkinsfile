@@ -86,7 +86,7 @@ pipeline {
                             docker_push(
                                 imageName: env.DOCKER_IMAGE_NAME,
                                 imageTag: env.DOCKER_IMAGE_TAG,
-                                credentials: 'dockerhub-cred'
+                                credentials: 'docker-hub-credentials'
                             )
                         }
                     }
